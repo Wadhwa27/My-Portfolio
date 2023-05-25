@@ -1,209 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY PORTFOLIO</title>
- <link href = "style.css" rel = "stylesheet">
- <script src="https://kit.fontawesome.com/188a51c9a9.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/188a51c9a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="header">
-     <div class = "container">
-            <nav>
-                <img  alt = ""src = "images/neha_logo-removebg-preview.png" class ="logo">
-                <ul>
-                    <li><a href = "#">Home</a></li>
-                    <li><a href = "#">About</a></li>
-                    <li><a href = "#">Projects</a></li>
-                    <li><a href = "#">Portfolio</a></li>
-                    <li><a href = "#">Contact</a></li>
-                    <i class="fas fa-times"></i>
-                </ul>
-                <i class="fas fa-bars"></i>
-            </nav>
-            <div class="header-text">
-                <p>
-                    Hi, I'm <span>Neha</span>
-                </p>
-                <h1>Rising Engineer at the University of DCRUST<br> studying Electronics & Communication, <br> having different technical skills</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="images/neha_logo-removebg-preview.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Interest</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <div class="con1">
+          <p>Hi, I'm <span>Neha</span></p>
+
+          <h1>
+            Passionate engineering student driven by <br />relentless curiosity
+            to explore new frontiers, <br />
+            tackle complex problems & contribute to <br />
+            transformative advancements in technology
+          </h1>
         </div>
-    </div>
- <!-- about -->
-    <div id="about">
-        <div class="container">
-<div class="row">
-<div class="about-col-1">
-<img  src="images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" 
-width="500px" 
-height="500px" ;>
-</div>
-<div class="about-col-2">
-    <h1 class="sub-title">About Me</h1>
-    <p>
-        I am diligent, energetic & evermore eager to learn. Being a competent presenter enhances my persona. Persist in exploring things, engaging with tech, participating in hackathons & prying in designing to keep my routine ahead.
-    </p>
-   
-    
-
-    <div class="tab-titles">
-       <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
-       <p class = "tab-links" onclick="opentab('education')">Education</p>
-       <p class = "tab-links" onclick="opentab('experience')">Experience</p>
-    </div>
-  
-
-    <div class="tab-contents active-tab"  id = "skills">
-        <ul>
-           
-        <li><span>UI/UX Designing </span> <br>Figma tool</li>
-        <li><span>Google Dialogflow </span> <br> AI tool</li>
-        <li><span>Java </span> <br> Programming language</li>
-        <li><span>Content Writing</span> <br> </li>
-
-        </ul>
-    </div>
-    <div class="tab-contents" id = "education">
-        <ul>
-           
-        <li><span>2020-Present </span> <br>B.Tech at DCRUST with 8.65 CGPA so far </li>
-        <li><span>2019 </span> <br> 12th with 91.8%</li>
-        <li><span>2017 </span> <br> 10th with 96.2%</li>
         
-
-        </ul>
-    </div>
-
-    <div class="tab-contents" id = "experience">
-        <ul>
-           
-        <li><span> Internship</span> <br>Intern in Infosys Sprinboard from Feb 2022 -  May 2022</li>
-        <li><span>  Hackathons</span> <br> participated in various hackathons which include IIT Bombay TechFest Zonals, Smart India Hackathon and so on </li>
-        <li><span>Entrepreneurship Programme</span> <br> Joined various startups & Entrepreneurship programme</li>
-       
-
-        </ul>
-    </div>
-
-
-
-</div>
-
-</div>
-</div>  
+        <div class="headerimage">
+            <img src="images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg"  alt="" srcset="">
         </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
+              width="500px"
+              height="500px"
+              ;
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p>
+              I am diligent, energetic & evermore eager to learn. Being a
+              competent presenter enhances my persona. Persist in exploring
+              things, engaging with tech, participating in hackathons & prying
+              in designing to keep my routine ahead.
+            </p>
 
-        <!-- services -->
-        <div id="services">
-        <div class="container">
-        <h1 class="sub-title"> My Project</h1>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX Designing </span> <br />Figma tool</li>
+                <li>
+                  <span>Google Dialogflow </span> <br />
+                  AI tool
+                </li>
+                <li>
+                  <span>Java </span> <br />
+                  Programming language
+                </li>
+                <li><span>Content Writing</span> <br /></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-Present </span> <br />B.Tech at DCRUST with 8.65
+                  CGPA so far
+                </li>
+                <li>
+                  <span>2019 </span> <br />
+                  12th with 91.8%
+                </li>
+                <li>
+                  <span>2017 </span> <br />
+                  10th with 96.2%
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span> Internship</span> <br />Intern in Infosys Sprinboard
+                  from Feb 2022 - May 2022
+                </li>
+                <li>
+                  <span> Hackathons</span> <br />
+                  participated in various hackathons which include IIT Bombay
+                  TechFest Zonals, Smart India Hackathon and so on
+                </li>
+                <li>
+                  <span>Entrepreneurship Programme</span> <br />
+                  Joined various startups & Entrepreneurship programme
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Interest</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>UI/UX</h2>
-                <p>
-                   Healthcare app design in which there is end to end communication between doctor and patient. Also medicine can be ordered & videos in health care sector is also available
-                </p>
-                 <a href="https://www.figma.com/file/9TfgOEM8wA7Ltoz5q9ABYV/Untitled?node-id=0%3A1">App design </a>
-            </div>
-            <div>
-                <i class="fa-solid fa-robot"></i>
-                <h2>Mood Bot</h2>
-                <p>
-                how you feel sad, happy, depression & anxiety  
-                </p>
-                 <a href="#">learn more</a>
-            </div>
-            <div>
-                <i class="fa-sharp fa-solid fa-code-branch"></i>
-                <h2>LFR</h2>
-                <p>
-                   line following bot which follows white line
-                </p>
-                 <a href="#">learn more</a>
-            </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Problem Solving and Programming</h2>
+            <p>
+              Solved different question on different platforms which include
+              Leetcode & GFG.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-robot"></i>
+            <h2>Designing</h2>
+            <p>Design various posters & prototypes using figma & canvas</p>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-code-branch"></i>
+            <h2>Hardware</h2>
+            <p>
+              Engaging in hadware projects which includes gripping bot & LFR
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- porfolio -->
-<div id="portfolio">
-    <div class="container">
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/image 1.png">
-                <div class="layer">
-                    <h3>app design</h3>
-                    <p>health care app for the all in one app for the mental health</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/image 1.png" />
+            <div class="layer">
+              <h2>App design</h2>
+              <br />
+              <p>
+                Healthcare app design in which there is end to end communication
+                between doctor and patient
+              </p>
+              <a
+                href="https://www.figma.com/file/9TfgOEM8wA7Ltoz5q9ABYV/Untitled?node-id=0%3A1"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src= "images/bchatbotimag2.png">
-                <div class="layer">
-                    <h3>app design</h3>
-                    <p>health care app for the all in one app for the mental health</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/bchatbotimag2.png" />
+            <div class="layer">
+              <h2>Mood Bot</h2>
+              <br />
+              <p>
+                Bot understand emotions of the person & try to reply in the
+                better way
+              </p>
+              <a href="https://harshphogat.github.io/Chat_Bot/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/Untitled (1).png">
-                <div class="layer">
-                    <h3>app design</h3>
-                    <p>health care app for the all in one app for the mental health</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/Untitled (1).png" />
+            <div class="layer">
+              <h2>Line Following Bot</h2>
+              <p>Bot which follow black or white line</p>
+              <a href="https://github.com/Wadhwa27/LFR"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
+          </div>
         </div>
-        <a href="#" class = "btn">See More</a>
+      </div>
     </div>
-</div>
-<!-- contact -->
-<div id="contact">
-    <div class="container">
+    <!-- contact -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1  class = "sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>nehawadhwa378@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>7568254979</p>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>  
-                </div>
-
-                <a href="images/Neha Wadhwa_Resume_1.pdf" download  class="btn btn2">Download CV</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>nehawadhwa378@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>7568254979</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/neha-wadhwa-750037202"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/Wadhwa27"><i class="fa-brands fa-github"></i></a>
             </div>
-            <div class="contact-right">
-            <form>
-                <input type = "text" name = "Name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your email" required>
-                <textarea name="Message" rows="6" placeholder= "YourMeassage" ></textarea>
-              <button type = "submit" class = "btn btn2"> Submit</button>
+
+            <a href="images/Neha Wadhwa_Resume-final.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="YourMeassage"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        </div>
-        
+      </div>
+      <div class="copyright">
+        <p>Thankyou for the visit</p>
+      </div>
     </div>
-    <div class="copyright">
-        <p>Thankyou for the visit </p>
-    </div>
-</div>
 
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-             for (tablink of tablinks){
-                tablink.classList.remove("active-link");
-             }
-             for (tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-             }
-             event.currentTarget.classList.add("active-link");
-             document.getElementById(tabname).classList.add("active-tab");
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
-</body>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby9yrulMRcc337zzpL5zoDxyEHP8ZU6lBvCH-vpVvXCtnEMcr1-KsAFRhbRgmk143Vo/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
